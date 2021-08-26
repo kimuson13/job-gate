@@ -1,0 +1,46 @@
+// このファイルではボタンのスタイルが記載されています。
+
+//　これは基本のボタン。aタグに付与させることを前提に作成している。
+//　なので、text-decorationをnoneにしている。
+//　トップページでしか使えないかも。
+.btn-normal {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: $cButtonBeforeHover;
+    border-radius: 5px;
+    color: $cWhite;
+    min-width: 200px;
+    line-height: 48px;
+    transition: all 0.3s ease-in-out 0s;
+    font-weight: bold;
+    font-size: 0.875rem;
+    letter-spacing: 0.02em;
+
+    &:hover {
+        background-color: $cButtonAfterHover;
+    }
+}
+
+.btn-done {
+    display: inline-block;
+    transition: all 0.3s ease-in-out 0s;
+    text-align: center;
+    background-color: $cButtonDoneBeforeHover;
+    color: $cWhite;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.8125rem;
+    height: 45px;
+    border-radius: 2px;
+    line-height: 45px;
+    min-width: 140px;
+
+    &:hover {
+        background-color: $cButtonDoneAfterHover;
+    }
+}
