@@ -206,4 +206,48 @@
   width: 110px;
   height: 110px;
 }
+
+.section {
+  width: 100%;
+  position: relative;
+}
+
+.section__main-title {
+  font-size: 48px;
+  text-align: center;
+  color: #2b546a;
+  margin-bottom: 100px;
+}
+
+.section__form-item-input {
+  position: relative;
+}
+
+.section__item-label {
+  display: block;
+  position: relative;
+  margin: 12px;
+  font-size: 20;
+  color: black;
+}
+
+.section__item-input {
+  resize: none;
+  display: block;
+  position: relative;
+  margin: 30px auto;
+  width: 90%;
+  height: 20%;
+  font-size: 20px;
+}
+
+.section__form-btn {
+  text-align: right;
+}
+
+.section__sub-title {
+  color: #2b546a;
+  margin-bottom: 27px;
+  font-size: 35px;
+}
 /*# sourceMappingURL=style.css.map */
