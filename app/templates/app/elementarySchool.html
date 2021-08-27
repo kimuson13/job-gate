@@ -1,0 +1,41 @@
+{% extends 'jobgate/layout.html' %}
+
+{% block main-content %}
+<!-- この中にHTMLの内容を書く。 -->
+
+<div class="section__container">
+    <div class="section__header">
+        <h1 class="section__main-title">小学校編</h1>
+        <p class="section__sub-title">
+            <span>この章では小学校について振り返ってもらいます。</span>
+        </p>
+    </div>
+    <!--TODO:下のフォームのアクションを正しいものに変える(伊藤)-->
+    <form action=""　method="POST" class="section__form">
+        <div class="section__item">
+            <label for="name" class="section__item-label">小学校ではどのようなことをしていた？:</label>
+            <input type="text" class="section__item-input" required>
+        </div>
+        <div class="section__item">
+            <label for="name" class="section__item-label">なんでそれをしていた？:</label>
+            <input type="text" class="section__item-input" required>
+        </div>
+        <div class="section__item">
+            <label for="name" class="section__item-label">小学生のときはどのような子だった？:</label>
+            <input type="text" class="section__item-input" required>
+        </div>
+        <div class="section__item">
+            <label for="name" class="section__item-label">小学生のとき、好きだったものは？:</label>
+            <input type="text" class="section__item-input" required>
+        </div>
+        <div class="section__item">
+            <label for="name" class="section__item-label">なんでそれが好きだった？:</label>
+            <input type="text" class="section__item-input" required>
+        </div>
+        <div class="section__form-btn">
+            <input type="submit" class="btn-send" value="できた！">
+        </div>
+    </form>
+</div>
+
+{% endblock %}
