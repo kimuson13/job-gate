@@ -1,0 +1,44 @@
+// 学生時代ページのスタイルについて記述する。
+.section {
+    width: 100%;
+    position: relative;
+
+    &__main-title {
+        font-size: 48px;
+        text-align: center;
+        color: $cTitleColor;
+        margin-bottom: 100px;
+    }
+
+    &__form-item-input {
+        position: relative;
+    }
+
+    &__item-label {
+        display: block;
+        position: relative;
+        margin: 12px;
+        font-size: 20;
+        color: black;
+    }
+
+    &__item-input {
+        resize: none;
+        display: block;
+        position: relative;
+        margin: 30px auto;
+        width: 90%;
+        height: 20%;
+        font-size: 20px;
+    }
+
+    &__form-btn {
+        text-align: right;
+    }
+
+    &__sub-title {
+        color: $cTitleColor;
+        margin-bottom: 27px;
+        font-size: 35px;
+    }
+}
