@@ -4,12 +4,14 @@ from .models import Post
 from .forms import PostForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 
+
 class IndexView(View):
     def get(self, request, *args, **kwargs):
         post_data = Post.objects.order_by('-id')
-        return render(request, 'app/index.html', {
+        return render(request, 'app/home.html', {
             'post_data': post_data
         })
+
 
 class PostDetailView(View):
     def get(self, request, *args, **kwargs):
@@ -17,14 +19,15 @@ class PostDetailView(View):
         return render(request, 'app/post_detail.html', {
             'post_data': post_data
         })
-    
+
 
 class CreatePostView(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
         form = PostForm(request.POST or None)
-        return render(request, 'app/post_form.html',{
+        return render(request, 'app/post_form.html', {
             'form': form
         })
+
     def post(self, request, *args, **kwargs):
         form = PostForm(request.POST or None)
 
@@ -36,22 +39,23 @@ class CreatePostView(LoginRequiredMixin, View):
             post_data.save()
             return redirect('post_detail', post_data.id)
 
-        return render(request, 'app/post_form.html',{
+        return render(request, 'app/post_form.html', {
             'form': form
         })
+
 
 class PostEditView(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
         post_data = Post.objects.get(id=self.kwargs['pk'])
         form = PostForm(
             request.POST or None,
-            initial = {
+            initial={
                 'title': post_data.title,
                 'content': post_data.content
             }
-        )      
-        return render(request, 'app/post_form.html',{
-            'form' : form
+        )
+        return render(request, 'app/post_form.html', {
+            'form': form
         })
 
     def post(self, request, *args, **kwargs):
@@ -64,9 +68,10 @@ class PostEditView(LoginRequiredMixin, View):
             post_data.save()
             return redirect('post_detail', self.kwargs['pk'])
 
-        return render(request, 'app/post_form.html',{
-            'form' : form
+        return render(request, 'app/post_form.html', {
+            'form': form
         })
+
 
 class PostDeleteView(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
@@ -74,7 +79,7 @@ class PostDeleteView(LoginRequiredMixin, View):
         return render(request, 'app/post_delete.html', {
             'post_data': post_data
         })
-    
+
     def post(self, request, *args, **kwargs):
         post_data = Post.objects.get(id=self.kwargs['pk'])
         post_data.delete()
