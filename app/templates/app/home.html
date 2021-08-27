@@ -4,21 +4,22 @@
 <!-- この中にHTMLの内容を書く。 -->
 <div class="home">
     <h1 class="home__main-title">
-        自己分析で人生の可能性を広げよう
+        自己分析で<br>人生の可能性を広げよう
     </h1>
     <div class="home__start-form-container">
         <!--TODO:form action=""の部分に正しいアクションを書く(伊藤)-->
+        <p class="home__account">アカウントを登録</p>
         <form action="" method="POST" class="home__start-form">
             <div class="home__form-item">
-                <label for="name" class="home__form-item-label">名前を入力してください:</label>
+                <label for="name" class="home__form-item-label">名前を入力してください</label>
                 <input type="text" class="home__form-item-input" required>
             </div>
             <div class="home__form-item">
-                <label for="email" class="home__form-item-label">メールアドレスを入力してください:</label>
+                <label for="email" class="home__form-item-label-2">メールアドレスを入力してください</label>
                 <input type="email" class="home__form-item-input" required>
             </div>
             <div class="home__form-btn">
-                <input type="submit" class="btn-normal" value="今すぐ始める">
+                <input type="submit" class="btn-normal" value="今すぐはじめる">
             </div>
         </form>
     </div>
@@ -29,8 +30,8 @@
         <h2 class="home__sub-title">すぐに実践</h2>
         <p class="home__intro-contents">
             <span>実際に過去の振り返りをしながら進めていくから、使える考え方が身につきます。</span>
-        <div class="sentence-space-short"></div>
-        <span>ブラウザ上で、自己分析を書いて結果も確認。準備いらずで、すぐに自己分析が実践できます。</span>
+            <br>
+            <span>ブラウザ上で、自己分析を書いて結果も確認。準備いらずで、すぐに自己分析が実践できます。</span>
         </p>
     </div>
     <div class="home__intro-container">
@@ -38,33 +39,35 @@
         <h2 class="home__sub-title">道のりに沿って分析する</h2>
         <p class="home__intro-contents">
             <span>実際に過去の振り返りをしながら進めていくから、使える考え方が身につきます。</span>
-        <div class="sentence-space"></div>
-        <span>ブラウザ上で、自己分析を書いて結果も確認。準備いらずで、すぐに自己分析が実践できます。</span>
+            <br>
+            <span>ブラウザ上で、自己分析を書いて結果も確認。準備いらずで、すぐに自己分析が実践できます。</span>
         </p>
     </div>
     <div class="home__intro-container success-story__main">
-        <h2 class="home__subtitle success-story__title">サクセスストーリー</h2>
-        <p class="success-story__subtitle">就活の世界への第一歩を踏み出し、夢を実現した方々のサクセスストーリーを紹介します。</p>
+        <h2 class="success-story__title">サクセスストーリー</h2>
+        <p class="success-story__sub-title">就職活動の世界への第一歩を踏み出し、夢を実現した方々のサクセスストーリーを紹介します。</p>
         <div class="success-story__main-list">
             <div class="success-story__card">
                 <div class="success-story__card__icon-container">
                     <!--<img src="images/image1.png" alt="" class="icon-image">-->
-                    <img src="{% static 'images/image1.png' %}" alt="画像1" class="icon-image">
+                    <img src="{% static 'images/image7.png' %}" alt="画像1" class="icon-image">
                 </div>
                 <p class="success-story__card__summary">「自己分析で人生180度変わった。」大学生が就活を始められるようになるまで</p>
                 <div class="success-story__card__info">
-                    <p class="success-story__card__user-name">山田太郎</p>
-                    <p class="success-story__card__country-name">Japan</p>
+                    <span class="success-story__card__user-name">山田太郎</span>
+                    <br>
+                    <span class="success-story__card__country-name">Japan</span>
                 </div>
             </div>
             <div class="success-story__card">
                 <div class="success-story__card__icon-container">
-                    <img src="{% static 'images/image2.png' %}" alt="画像2" class="icon-image">
+                    <img src="{% static 'images/image1.png' %}" alt="画像3" class="icon-image">
                 </div>
                 <p class="success-story__card__summary">「自己分析はもうやりたくなかったけど必要に迫られて」超実践自己分析活用法</p>
                 <div class="success-story__card__info">
-                    <p class="success-story__card__user-name">田中次郎</p>
-                    <p class="success-story__card__country-name">Japan</p>
+                    <span class="success-story__card__user-name">田中次郎</span>
+                    <br>
+                    <span class="success-story__card__country-name">Japan</span>
                 </div>
             </div>
             <div class="success-story__card">
@@ -73,8 +76,9 @@
                 </div>
                 <p class="success-story__card__summary">「私、就活できるかも。」Jobgateから2ヵ月で、アイドルから就活した話</p>
                 <div class="success-story__card__info">
-                    <p class="success-story__card__user-name">佐藤花子</p>
-                    <p class="success-story__card__country-name">Japan</p>
+                    <span class="success-story__card__user-name">佐藤花子</span>
+                    <br>
+                    <span class="success-story__card__country-name">Japan</span>
                 </div>
             </div>
             <div class="success-story__card">
@@ -83,8 +87,9 @@
                 </div>
                 <p class="success-story__card__summary">「起業準備はJobgateしかしていません」株式会社代表　山田花子の自己分析方法</p>
                 <div class="success-story__card__info">
-                    <p class="success-story__card__user-name">山田花子</p>
-                    <p class="success-story__card__country-name">Japan</p>
+                    <span class="success-story__card__user-name">山田花子</span>
+                    <br>
+                    <span class="success-story__card__country-name">Japan</span>
                 </div>
             </div>
             <div class="success-story__card">
@@ -93,8 +98,9 @@
                 </div>
                 <p class="success-story__card__summary">「夢みていたところで働けるのは幸せです」自己分析未経験者が憧れの会社で働くまで</p>
                 <div class="success-story__card__info">
-                    <p class="success-story__card__user-name">田中花子</p>
-                    <p class="success-story__card__country-name">Japan</p>
+                    <span class="success-story__card__user-name">田中花子</span>
+                    <br>
+                    <span class="success-story__card__country-name">Japan</span>
                 </div>
             </div>
             <div class="success-story__card">
@@ -103,39 +109,42 @@
                 </div>
                 <p class="success-story__card__summary">「教育現場に自己分析経験を還元したい！」元教職志望が叶えたい夢とは</p>
                 <div class="success-story__card__info">
-                    <p class="success-story__card__user-name">佐藤太郎</p>
-                    <p class="success-story__card__country-name">Japan</p>
+                    <span class="success-story__card__user-name">佐藤太郎</span>
+                    <br>
+                    <span class="success-story__card__country-name">Japan</span>
                 </div>
             </div>
         </div>
     </div>
     <div class="home__text-container">
         <h2 class="home__sub-title">初心者から、分かる人を生み出す</h2>
-        <p class="home__intro-content">
+        <p class="home__intro-contents">
+            <!-- brを使わないでスペースを表現する。 -->
             <span>初心者でも独りで、挫折せずに分析できること。</span>
-        <div class="sentence-space__short"></div>
-        <span>そして、本物のスキルが身につき、自分について「分かる」ようになること。</span>
-        <div class="sentence-space__large"></div>
-        <span>就職活動で夢を叶えたい人が、本当に夢を叶えられるように、</span>
-        <div class="sentence-space__short"></div>
-        <span>私たちはこんな思いをJobgateに込めています。</span>
-        <div class="sentence-space__large"></div>
-        <span>就職活動の世界へ踏み出すあなたを、私たちがサポートします。</span>
+            <br>
+            <span>そして、本物のスキルが身につき、自分について「分かる」ようになること。</span>
+            <br><br><br>
+            <span>就職活動で夢を叶えたい人が、本当に夢を叶えられるように、</span>
+            <br>
+            <span>私たちはこんな思いをJobgateに込めています。</span>
+            <br><br><br>
+            <span>就職活動の世界へ踏み出すあなたを、私たちがサポートします。</span>
         </p>
     </div>
-    <div class="home__start-form-container-buttom">
+    <div class="home__start-form-container-button">
         <div class="home__start-form-title">
             <h2 class="home__sub-title">さっそく始めよう</h2>
-            <p class="home__intro-content">1分後、就職活動の世界でお会いしましょう。</p>
+            <p class="home__intro-contents">1分後、就職活動の世界でお会いしましょう。</p>
         </div>
         <!--TODO:form action=""の部分に正しいアクションを書く(伊藤)-->
         <form action="" method="POST" class="home__start-form">
+            <p class="home__account">アカウントを登録</p>
             <div class="home__form-item">
-                <label for="name" class="home__form-item-label">名前を入力してください:</label>
+                <label for="name" class="home__form-item-label">名前を入力してください</label>
                 <input type="text" class="home__form-item-input" required>
             </div>
             <div class="home__form-item">
-                <label for="email" class="home__form-item-label">メールアドレスを入力してください:</label>
+                <label for="email" class="home__form-item-label">メールアドレスを入力してください</label>
                 <input type="email" class="home__form-item-input" required>
             </div>
             <div class="home__form-btn">
