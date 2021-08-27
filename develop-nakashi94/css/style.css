@@ -1,0 +1,57 @@
+body {
+    color: #333333;
+    background-color: #ffffff;
+}
+
+/*　見出し　*/
+#sitetitle {
+    font-size: 48px;
+}
+.headTypeA {
+    font-size: 32px;
+}
+.headTypeB {
+    font-size: 24px;
+}
+.headTypeC {
+    font-size: 20px;
+    width: 220px;
+    float: left;
+}
+
+.headTypeD {
+    font-size: 18px;
+    width: 220px;
+}
+.headTypeE {
+    font-size: 18px;
+    width: 220px;
+}
+
+/*　ページヘッダー　*/
+/*#category1 {
+    float: left;
+}
+#category2 {
+    float: left;
+}/*
+
+/*　ページフッター　*/
+.footTypeA {
+    float: left;
+}
+.footTypeB {
+    float: left;
+}
+.footTypeC {
+    float: left;
+}
+.footTypeD {
+    float: right;
+}
+
+/*　区切り線・余白　*/
+section {
+    border-top: solid 1px #0000ff;
+    border-bottom: solid 1px #0000ff;
+}
