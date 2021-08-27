@@ -41,4 +41,9 @@
 .btn-done:hover {
   background-color: #0d9177;
 }
+
+.home .main-title {
+  font-size: 48px;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
