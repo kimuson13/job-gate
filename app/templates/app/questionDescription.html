@@ -1,28 +1,26 @@
 {% extends 'app/layout.html' %}
-
+{% load static %}
 {% block main-content %}
 <!-- この中にHTMLの内容を書く。 -->
 
-<div class="question__container">
+<div class="question">
     <div class="question__title">
         <h1 class="question__main-title">
             Jobgateの流れ
         </h1>
         <p class="question__description">
             <span>このページではJobgateの流れについて説明します。</span>
-            <div class="sentence-space__short"></div>
+            <br>
             <span>Jobgateは小学校編、中学校編、高校編、大学編に分かれています。</span>
         </p>
     </div>
     <div class="question__contents">
         <div class="question__items">
             <div class="question__items-title">
-                <h2 class="quesiton__sub-title">小学校編</h2>
-                <p class="question__description">
+                <h2 class="question__sub-title">小学校編</h2>
+                <p class="question__item-description">
                     <span>この章では小学校について振り返ってもらいます。</span>
                 </p>
-            </div>
-            <div class="question__items-contents">
                 <ul class="question__items-questions">
                     <li class="question__items-example">小学校ではどのようなことをしていた？</li>
                     <li class="question__items-example">小学生のときはどのような子だった？</li>
@@ -31,12 +29,10 @@
         </div>
         <div class="question__items">
             <div class="question__items-title">
-                <h2 class="quesiton__sub-title">中学校編</h2>
-                <p class="question__description">
+                <h2 class="question__sub-title">中学校編</h2>
+                <p class="question__item-description">
                     <span>この章では中学校について振り返ってもらいます。</span>
                 </p>
-            </div>
-            <div class="question__items-contents">
                 <ul class="question__items-questions">
                     <li class="question__items-example">中学校では何をがんばった？</li>
                 </ul>
@@ -44,12 +40,10 @@
         </div>
         <div class="question__items">
             <div class="question__items-title">
-                <h2 class="quesiton__sub-title">高校編</h2>
-                <p class="question__description">
+                <h2 class="question__sub-title">高校編</h2>
+                <p class="question__item-description">
                     <span>この章では高校について振り返ってもらいます。</span>
                 </p>
-            </div>
-            <div class="question__items-contents">
                 <ul class="question__items-questions">
                     <li class="question__items-example">高校ではなにをがんばった？</li>
                 </ul>
@@ -57,12 +51,10 @@
         </div>
         <div class="question__items">
             <div class="question__items-title">
-                <h2 class="quesiton__sub-title">大学編</h2>
-                <p class="question__description">
+                <h2 class="question__sub-title">大学編</h2>
+                <p class="question__item-description">
                     <span>この章では大学時代について振り返ってもらいます。</span>
                 </p>
-            </div>
-            <div class="question__items-contents">
                 <ul class="question__items-questions">
                     <li class="question__items-example">大学では何をがんばった？</li>
                     <li class="question__items-example">そのとき何を感じた？</li>
