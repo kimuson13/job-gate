@@ -2,9 +2,12 @@
 .section {
     width: 100%;
     position: relative;
+    padding-top: 150px;
+    background-color: $cBackgroundColor;
+    padding-bottom: 100px;
 
     &__main-title {
-        font-size: 48px;
+        font-size: 55px;
         text-align: center;
         color: $cTitleColor;
         margin-bottom: 100px;
@@ -18,8 +21,9 @@
         display: block;
         position: relative;
         margin: 12px;
-        font-size: 20;
-        color: black;
+        padding-left: 40px;
+        font-size: 28px;
+        color: $cSubTItleColor;
     }
 
     &__item-input {
@@ -38,7 +42,9 @@
 
     &__sub-title {
         color: $cTitleColor;
+        text-align: center;
         margin-bottom: 27px;
         font-size: 35px;
+        font-weight: 500;
     }
 }
