@@ -10,13 +10,14 @@
         <!--TODO:form action=""の部分に正しいアクションを書く(伊藤)-->
         <p class="home__account">アカウントを登録</p>
         <form action="" method="POST" class="home__start-form">
+            {% csrf_token %}
             <div class="home__form-item">
                 <label for="name" class="home__form-item-label">名前を入力してください</label>
-                <input type="text" class="home__form-item-input" required>
+                <input type="text" class="home__form-item-input" name="name" required>
             </div>
             <div class="home__form-item">
                 <label for="email" class="home__form-item-label-2">メールアドレスを入力してください</label>
-                <input type="email" class="home__form-item-input" required>
+                <input type="email" class="home__form-item-input" name="email" required>
             </div>
             <div class="home__form-btn">
                 <input type="submit" class="btn-normal" value="今すぐはじめる">
@@ -138,6 +139,7 @@
         </div>
         <!--TODO:form action=""の部分に正しいアクションを書く(伊藤)-->
         <form action="" method="POST" class="home__start-form">
+            {% csrf_token %}
             <p class="home__account">アカウントを登録</p>
             <div class="home__form-item">
                 <label for="name" class="home__form-item-label">名前を入力してください</label>
