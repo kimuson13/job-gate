@@ -1,0 +1,62 @@
+.question {
+    position: relative;
+
+    &__main-title {
+        font-size: 48px;
+        text-align: center;
+        color: $cTitleColor;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        text-align: center;
+        color: $cSubTItleColor;
+        margin-bottom: 150px;
+    }
+
+    &__contents {
+        background-color: $cTitleColor;
+        padding: 150px;
+        margin-bottom: 150px;
+    }
+
+    &__items {
+        text-align: center;
+    }
+
+    &__item-title {
+        color: $cWhite;
+    }
+
+    &__sub-title {
+        color: $cWhite;
+        font-size: 32px;
+    }
+
+    &__item-description {
+        color: $cSubTItleColor;
+        font-size: 23px;
+    }
+
+    &__items-example {
+        color: $cWhite;
+    }
+
+    &__items-title {
+        margin-bottom: 70px;
+    }
+
+    &__ending {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    &__subtitle {
+        color: $cTitleColor;
+        margin-bottom: 25px;
+    }
+}
+
+ul {
+    list-style: none;
+}

@@ -23,6 +23,8 @@
 
     &:hover {
         background-color: $cButtonAfterHover;
+        text-decoration: none;
+        color: $cWhite;
     }
 }
 
