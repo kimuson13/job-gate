@@ -8,4 +8,4 @@
 - フロントエンド：HTML/CSS, SCSS
 - バックエンド：Django
 # イメージ図
-![image](https://user-images.githubusercontent.com/38969025/131205457-c5f54ba7-67d7-4a8b-8bec-fee2f08a2f29.png)
+![image](https://user-images.githubusercontent.com/38969025/131207719-455e43db-d99e-451b-a4c5-02fd4f109a4c.png)
