@@ -1,9 +1,9 @@
 {% extends 'app/layout.html' %}
-
+{% load static %}
 {% block main-content %}
 <!-- この中にHTMLの内容を書く。 -->
 
-<div class="section__container">
+<div class="section">
     <div class="section__header">
         <h1 class="section__main-title">小学校編</h1>
         <p class="section__sub-title">
@@ -33,7 +33,7 @@
             <input type="text" class="section__item-input" required>
         </div>
         <div class="section__form-btn">
-            <input type="submit" class="btn-send" value="できた！">
+            <input type="submit" class="btn-done" value="できた！">
         </div>
     </form>
 </div>

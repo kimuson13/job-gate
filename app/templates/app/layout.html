@@ -10,10 +10,46 @@
     <link rel="stylesheet" href="{% static '/css/style.css' %}">
 </head>
 <body>
-    <!-- ここにはヘッダーを追加する。 -->
-    <main>
+    <div id="global-container">
+        <!-- ここにはヘッダーを追加する。 -->
+        <header class="header">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <!--TODO　ロゴを配置する-->
+                    <!-- <img src="" alt="" class="logo__img"> -->
+                    <span class="header__logo__title">jobgate</span>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__ul">
+                        <li class="header__li">法人プラン</li>
+                        <li class="header__li">言語▼</li>
+                        <li class="header__li">ログイン</li>
+                        <a href="#" class="header__btn">無料会員登録</a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
         {% block main-content %}
         {% endblock %}
-    </main>
+        </main>
+    </div>
+    <hr>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <!--TODO　ロゴを配置する-->
+                <!-- <img src="" alt="" class="logo__img"> -->
+                <span class="footer__logo__title">jobgate</span>
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__ul">
+                    <li class="footer__li">サービス</li>
+                    <li class="footer__li">サポート</li>
+                    <li class="footer__li">法人プラン</li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
